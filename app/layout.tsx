@@ -27,7 +27,7 @@ const shippori = Shippori_Mincho({
 });
 
 export const metadata: Metadata = {
-  title: "takabayashi-kasumi portfolio",
+  title: "kasumi-takabayashi portfolio",
   description:
     "高林果純のポートフォリオサイトです。名古屋を中心にweb制作/開発をしています。",
   openGraph: {
