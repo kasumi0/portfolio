@@ -1,0 +1,108 @@
+.articleArea {
+  width: min(100%, 900px);
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  & h1 {
+    font-size: max(2vw, 1.4em);
+    text-transform: capitalize;
+    transition: color 0.3s;
+    width: fit-content;
+    &:hover {
+      color: var(--primary-c);
+    }
+  }
+  & > ul {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+    & li {
+      font-size: 14px;
+      text-transform: capitalize;
+      font-weight: 600;
+      background-color: var(--bg-c);
+      padding: 0.2em 1em;
+      border-radius: 2em;
+      position: relative;
+      z-index: 2;
+    }
+  }
+  & > img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+}
+.isRun {
+  background-color: #fff;
+  color: var(--primary-c);
+  padding: 0.2em 0.6em;
+  border-radius: 4px;
+  width: fit-content;
+  margin-left: auto;
+  font-family: var(--font-gothic), sans-serif;
+  &.privateArticle {
+    color:#bbb;
+  }
+}
+.urlP {
+  display: flex;
+  align-items: end;
+  gap: 0.6em;
+  color: color-mix(in srgb, var(--font-c), #dfdfdf);
+  & a {
+    border-bottom: 1px solid currentColor;
+    transition-property: color;
+    transition-duration: 0.2s;
+    &:hover {
+      color: var(--smoky-c);
+    }
+  }
+}
+.bodyArea {
+  line-height: 2;
+  font-family: var(--font-gothic), sans-serif;
+  & a {
+    border-bottom: 1px solid #999;
+    transition-property: color, border-color;
+    transition-duration: 0.3s;
+    &:hover {
+      &:hover {
+        color: var(--primary-c);
+        border-color: currentColor;
+      }
+    }
+  }
+  & p ~ p {
+    padding-top: 1em;
+  }
+}
+.backLink {
+  display: block;
+  width: fit-content;
+  margin: max(5vw, 50px) 0 0 auto;
+  font-size: 5vw;
+  text-transform: capitalize;
+  position: relative;
+  line-height: 1;
+  transition: color 0.6s;
+  &::before {
+    position: absolute;
+    inset: auto 0 0.18em;
+    background-color: currentColor;
+    content: "";
+    height: 1px;
+    scale: 0 1;
+    transition: scale 0.6s;
+    transform-origin: right;
+  }
+  &:hover {
+    color: var(--smoky-c);
+    &::before {
+      scale: 1;
+      transform-origin: left;
+    }
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/app/components/footer/footer.module.css"],"sourcesContent":[".footer {\n  padding: 5vw;\n  background-color: var(--font-c);\n  color: #fff;\n}\n.copyright {\n  text-align: center;\n  color: var(--primary-c);\n}"],"names":[],"mappings":"AAAA;;;;;;AAKA"}}]
+}

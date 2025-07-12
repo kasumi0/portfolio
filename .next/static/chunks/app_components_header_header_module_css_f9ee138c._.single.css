@@ -1,0 +1,69 @@
+/* [project]/app/components/header/header.module.css [app-client] (css) */
+.header-module__bAz-Na__header {
+  height: var(--header-h);
+  z-index: 100;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 5vw;
+  display: flex;
+  position: fixed;
+  inset: 0 0 auto;
+}
+
+.header-module__bAz-Na__header h1 a {
+  text-transform: uppercase;
+  flex-direction: column;
+  font-size: 18px;
+  transition: opacity .4s;
+  display: flex;
+}
+
+.header-module__bAz-Na__header h1 a span {
+  text-transform: capitalize;
+  color: var(--smoky-c);
+  font-size: 15px;
+}
+
+.header-module__bAz-Na__header h1 a:hover {
+  opacity: .6;
+}
+
+.header-module__bAz-Na__header ul {
+  text-transform: capitalize;
+  gap: 5vw;
+  font-size: 20px;
+  display: flex;
+}
+
+.header-module__bAz-Na__header ul a {
+  align-items: center;
+  gap: .6em;
+  transition: translate .4s;
+  display: flex;
+  translate: -.8em;
+}
+
+.header-module__bAz-Na__header ul a:before {
+  content: "";
+  aspect-ratio: 7 / 5;
+  background: linear-gradient(135deg, #fff, var(--primary-c));
+  border-radius: 50%;
+  width: .8em;
+  transition: scale .3s;
+  scale: 0;
+}
+
+.header-module__bAz-Na__header li {
+  overflow: hidden;
+}
+
+.header-module__bAz-Na__header li:hover a {
+  translate: 0;
+}
+
+.header-module__bAz-Na__header li:hover a:before {
+  transition-delay: .2s;
+  scale: 1;
+}
+
+/*# sourceMappingURL=app_components_header_header_module_css_f9ee138c._.single.css.map*/

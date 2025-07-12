@@ -1,0 +1,11 @@
+/* [project]/app/components/loopingVideo/loopingVideo.module.css [app-client] (css) */
+.loopingVideo-module__7FeLja__bgMovie {
+  object-fit: cover;
+  z-index: -1;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  inset: 0;
+}
+
+/*# sourceMappingURL=app_components_loopingVideo_loopingVideo_module_css_f9ee138c._.single.css.map*/

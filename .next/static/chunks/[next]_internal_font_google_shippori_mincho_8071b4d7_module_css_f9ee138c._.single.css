@@ -1,0 +1,20 @@
+/* [next]/internal/font/google/shippori_mincho_8071b4d7.module.css [app-client] (css) */
+@font-face {
+  font-family: Shippori Mincho Fallback;
+  src: local(Times New Roman);
+  ascent-override: 98.59%;
+  descent-override: 24.48%;
+  line-gap-override: 0.0%;
+  size-adjust: 117.66%;
+}
+
+.shippori_mincho_8071b4d7-module__fEpOQG__className {
+  font-family: Shippori Mincho, Shippori Mincho Fallback;
+  font-style: normal;
+}
+
+.shippori_mincho_8071b4d7-module__fEpOQG__variable {
+  --font-shippori: "Shippori Mincho", "Shippori Mincho Fallback";
+}
+
+/*# sourceMappingURL=%5Bnext%5D_internal_font_google_shippori_mincho_8071b4d7_module_css_f9ee138c._.single.css.map*/

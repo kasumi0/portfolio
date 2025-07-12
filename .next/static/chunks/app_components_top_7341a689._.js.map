@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 6, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/app/components/top/top.module.css [app-client] (css module)"],"sourcesContent":["__turbopack_context__.v({\n  \"hero\": \"top-module__c6siba__hero\",\n  \"linkCover\": \"top-module__c6siba__linkCover\",\n  \"portfolio\": \"top-module__c6siba__portfolio\",\n  \"thumbArea\": \"top-module__c6siba__thumbArea\",\n  \"titleList\": \"top-module__c6siba__titleList\",\n});\n"],"names":[],"mappings":"AAAA;AACA;AACA;AACA;AACA;AACA;AACA"}}]
+}

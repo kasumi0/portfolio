@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 38, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/app/components/loopingVideo/loopingVideo.module.css [app-ssr] (css module)"],"sourcesContent":["__turbopack_context__.v({\n  \"bgMovie\": \"loopingVideo-module__7FeLja__bgMovie\",\n});\n"],"names":[],"mappings":"AAAA;AACA;AACA"}}]
+}

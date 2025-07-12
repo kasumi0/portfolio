@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[next]/internal/font/google/shippori_mincho_8071b4d7.module.css"],"sourcesContent":["@font-face {\n    font-family: 'Shippori Mincho Fallback';\n    src: local(\"Times New Roman\");\n    ascent-override: 98.59%;\ndescent-override: 24.48%;\nline-gap-override: 0.00%;\nsize-adjust: 117.66%;\n\n}\n.className {\n    font-family: 'Shippori Mincho', 'Shippori Mincho Fallback';\n    font-style: normal;\n\n}\n.variable {\n    --font-shippori: 'Shippori Mincho', 'Shippori Mincho Fallback';\n}\n"],"names":[],"mappings":"AAAA;;;;;;;;;AASA;;;;;AAKA","ignoreList":[0]}}]
+}

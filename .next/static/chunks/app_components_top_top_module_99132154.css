@@ -1,0 +1,207 @@
+/* [project]/app/components/top/top.module.css [app-client] (css) */
+.top-module__c6siba__hero {
+  place-content: center;
+  place-items: center;
+  height: 100vh;
+  display: grid;
+  position: relative;
+}
+
+.top-module__c6siba__hero h1 {
+  text-align: center;
+  text-transform: capitalize;
+  font-size: max(8vw, 1.5em);
+}
+
+.top-module__c6siba__hero > span {
+  font-family: var(--font-shippori);
+  text-transform: capitalize;
+  text-align: end;
+  -webkit-text-stroke: var(--smoky-c) 1px;
+  opacity: .6;
+  color: #0000;
+  font-size: 6vw;
+  font-weight: 600;
+  line-height: .9;
+  position: absolute;
+  inset: auto 5vw -.02em auto;
+}
+
+.top-module__c6siba__infiniteArea {
+  mix-blend-mode: color-burn;
+  width: 100vw;
+  height: 6vw;
+  margin-inline: -5vw;
+  position: relative;
+  overflow: hidden;
+}
+
+.top-module__c6siba__infiniteArea > div {
+  white-space: nowrap;
+  display: inline-block;
+  position: absolute;
+  inset: 0 auto auto 0;
+}
+
+.top-module__c6siba__infiniteArea > div span {
+  font-size: 4vw;
+  font-weight: 600;
+}
+
+.top-module__c6siba__portfolio {
+  --h: calc(100vh - var(--header-h));
+  --nav-w: 140px;
+  align-items: start;
+  gap: 5vw;
+  display: flex;
+}
+
+.top-module__c6siba__categoriesNav {
+  top: calc(var(--h)  - 10em);
+  width: var(--nav-w);
+  flex-direction: column;
+  gap: 10px;
+  display: flex;
+  position: sticky;
+  overflow: hidden;
+}
+
+.top-module__c6siba__categoriesNav button {
+  text-transform: capitalize;
+  color: #aaa;
+  align-items: center;
+  gap: 10px;
+  font-size: 18px;
+  transition-property: color, translate;
+  transition-duration: .4s;
+  display: flex;
+  position: relative;
+  translate: -20px;
+}
+
+.top-module__c6siba__categoriesNav button span {
+  margin-block: auto;
+  transition: translate .4s;
+  position: absolute;
+  inset: 0 -20px 0 auto;
+}
+
+.top-module__c6siba__categoriesNav button:before {
+  content: "";
+  aspect-ratio: 1;
+  background-color: currentColor;
+  width: 10px;
+}
+
+.top-module__c6siba__categoriesNav button.top-module__c6siba__current {
+  color: var(--primary-c);
+  translate: 0;
+}
+
+.top-module__c6siba__categoriesNav button.top-module__c6siba__current span {
+  translate: -20px;
+}
+
+.top-module__c6siba__categoriesNav button:not(.top-module__c6siba__current):hover {
+  color: #333;
+}
+
+.top-module__c6siba__thumbArea {
+  top: calc((var(--h)  - (80vw - var(--nav-w)) * 9 / 32) / 2 + var(--header-h));
+  opacity: 0;
+  border-radius: 10px;
+  flex: 1;
+  place-items: center;
+  display: grid;
+  position: sticky;
+  overflow: hidden;
+  translate: 50px;
+  box-shadow: 0 14px 40px #0000004d;
+}
+
+.top-module__c6siba__thumbArea img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  scale: 1.1;
+}
+
+.top-module__c6siba__thumbArea.top-module__c6siba__active {
+  opacity: 1;
+  transition-property: opacity, translate;
+  transition-duration: .6s;
+  translate: 0;
+}
+
+.top-module__c6siba__thumbArea.top-module__c6siba__active img {
+  transition: scale 1s;
+  scale: 1;
+}
+
+.top-module__c6siba__titleList {
+  flex-direction: column;
+  flex: 1;
+  gap: 2em;
+  display: flex;
+}
+
+.top-module__c6siba__titleList li {
+  background-color: color-mix(in srgb, var(--primary-c), transparent 90%);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  transition-property: background-color, box-shadow;
+  transition-duration: .6s;
+  position: relative;
+  overflow: hidden;
+}
+
+@media (any-hover: hover) {
+  .top-module__c6siba__titleList li:hover {
+    background-color: #fff;
+    box-shadow: 0 10px 30px #0000001a;
+  }
+}
+
+.top-module__c6siba__titleList article {
+  padding: max(3vw, 1em);
+}
+
+.top-module__c6siba__titleList h3 {
+  font-family: var(--font-gothic);
+  text-transform: capitalize;
+  margin-bottom: 10px;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.top-module__c6siba__linkCover {
+  position: absolute;
+  inset: 0;
+}
+
+.top-module__c6siba__categoriesArea {
+  flex-wrap: wrap;
+  gap: 8px;
+  display: flex;
+}
+
+.top-module__c6siba__categoriesArea button {
+  text-transform: capitalize;
+  color: #666;
+  z-index: 2;
+  border: 1px solid;
+  border-radius: 2em;
+  padding: .2em 1em;
+  font-size: 14px;
+  transition-property: color, background-color;
+  transition-duration: .4s;
+  position: relative;
+}
+
+.top-module__c6siba__categoriesArea button:hover {
+  color: #fff;
+  background-color: #666;
+}
+
+
+/*# sourceMappingURL=app_components_top_top_module_99132154.css.map*/
