@@ -30,6 +30,21 @@ export const metadata: Metadata = {
   title: "takabayashi-kasumi portfolio",
   description:
     "高林果純のポートフォリオサイトです。名古屋を中心にweb制作/開発をしています。",
+  openGraph: {
+    title: "高林果純のポートフォリオ",
+    description:
+      "高林果純のポートフォリオサイトです。名古屋を中心にweb制作/開発をしています。",
+    url: "https://portfolio-one-cyan-78.vercel.app/",
+    images: [
+      {
+        url: "/ogp.webp",
+        width: 1200,
+        height: 630,
+      },
+    ],
+    locale: "ja_JP",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
