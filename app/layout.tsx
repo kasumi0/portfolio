@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     url: "https://portfolio-one-cyan-78.vercel.app/",
     images: [
       {
-        url: "/ogp.webp",
+        url: "/ogp.jpg",
         width: 1200,
         height: 630,
       },
