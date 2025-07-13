@@ -14,7 +14,6 @@
     position: absolute;
     inset: auto 5vw -0.02em auto;
     font-size: max(6vw, 3em);
-    text-transform: capitalize;
     font-weight: 600;
     text-align: end;
     line-height: 0.9;
@@ -30,7 +29,7 @@
   mix-blend-mode: color-burn;
   position: relative;
   height: max(6vw, 3em);
-  & > div {
+  & > div {    
     position: absolute;
     inset: 0 auto auto 0;
     white-space: nowrap;
@@ -40,7 +39,35 @@
       font-weight: 600;
     }
   }
+  &.safari {
+    color: var(--primary-c);
+    opacity: .3;
+  }
 }
+
+.about {
+  line-height: 2;
+  display: flex;
+  gap: 5vw;
+  padding-bottom: 0;
+  & hgroup {
+    width: max(40%, 320px);
+  }
+  & h2 {
+    font-size: max(1.6vw, 18px);
+    line-height: 1;
+    color: var(--smoky-c);
+    font-weight: 600;
+  }
+  & h3 {
+    font-size: max(1.6vw, 18px);
+  }
+  & > p {
+    flex: 1;
+    font-family:var(--font-gothic);
+  }
+}
+
 .portfolio {
   --h: calc(100vh - var(--header-h));
   --nav-w: 140px;
@@ -211,6 +238,12 @@
     }
     & > span {
       right: 0;
+    }
+  }
+  .about {
+    flex-direction: column;
+    & hgroup {
+      width: 100%;
     }
   }
   .portfolio {

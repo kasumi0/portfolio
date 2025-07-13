@@ -10,7 +10,7 @@
   }
 }
 
-.top {
+.policy {
   display: flex;
   position: relative;
   padding-bottom: max(10vw, 120px);
@@ -47,7 +47,7 @@
   }
 }
 
-.historyArea {
+.history {
   background-color: var(--font-c);
   color: #ccc;
   & > div {

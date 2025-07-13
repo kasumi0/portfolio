@@ -1,6 +1,6 @@
 import Image from "next/image";
 import styles from "./profile.module.css";
-const { fv, top, historyArea, head, body, skillsArea } = styles;
+const { fv, policy, history, head, body, skillsArea } = styles;
 
 export default function Profile() {
   const skills = [
@@ -34,7 +34,7 @@ export default function Profile() {
         <h1>profile</h1>
       </section>
 
-      <section className={top}>
+      <section className={policy}>
         <h2>Work Policy</h2>
         <h3>Web制作で大切にしていること</h3>
         <p>
@@ -46,7 +46,7 @@ export default function Profile() {
         </p>
       </section>
 
-      <section className={historyArea}>
+      <section className={history}>
         <div>
           <div className={head}>
             <h2>

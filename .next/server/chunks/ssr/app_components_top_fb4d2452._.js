@@ -5,6 +5,7 @@ module.exports = {
 var { g: global, __dirname } = __turbopack_context__;
 {
 __turbopack_context__.v({
+  "about": "top-module__c6siba__about",
   "active": "top-module__c6siba__active",
   "categoriesArea": "top-module__c6siba__categoriesArea",
   "categoriesNav": "top-module__c6siba__categoriesNav",
@@ -269,7 +270,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$top$2f$
 ;
 ;
 ;
-const { hero, portfolio, titleList, thumbArea, active } = __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$top$2f$top$2e$module$2e$css__$5b$app$2d$ssr$5d$__$28$css__module$29$__["default"];
+const { hero, about, portfolio, titleList, thumbArea, active } = __TURBOPACK__imported__module__$5b$project$5d2f$app$2f$components$2f$top$2f$top$2e$module$2e$css__$5b$app$2d$ssr$5d$__$28$css__module$29$__["default"];
 const Top = ({ works })=>{
     const [activeIndex, setActiveIndex] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(0);
     const [activeIndexStyle, setActiveIndexStyle] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(0);
@@ -336,6 +337,64 @@ const Top = ({ works })=>{
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
+                className: about,
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("hgroup", {
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                                children: "About me"
+                            }, void 0, false, {
+                                fileName: "[project]/app/components/top/Top.tsx",
+                                lineNumber: 67,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                children: "感性と責任のバランス感覚と、誠実さ"
+                            }, void 0, false, {
+                                fileName: "[project]/app/components/top/Top.tsx",
+                                lineNumber: 68,
+                                columnNumber: 11
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/app/components/top/Top.tsx",
+                        lineNumber: 66,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                        children: [
+                            "「作曲家は、無駄な音符を一つも書かない」",
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
+                                fileName: "[project]/app/components/top/Top.tsx",
+                                lineNumber: 72,
+                                columnNumber: 13
+                            }, this),
+                            "大学時代、師から学んだこの言葉を今も大切にしています。デザインや実装も同じで、意図や目的のない装飾やアニメーションには価値を感じません。なぜこのデザインなのか、この実装はなぜ必要なのか、常に説明できる仕事を心がけています。",
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
+                                fileName: "[project]/app/components/top/Top.tsx",
+                                lineNumber: 74,
+                                columnNumber: 13
+                            }, this),
+                            "また、前職である保育士の経験からは、マルチタスク、責任感、発案力、そして相手の状況を汲み取るコミュニケーション力を養いました。「一人で自走できそうにないことを無責任に引き受けない」「自分の責務の範囲を明確にし、確実に果たす」という姿勢は、今の制作にも通じています。",
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
+                                fileName: "[project]/app/components/top/Top.tsx",
+                                lineNumber: 76,
+                                columnNumber: 13
+                            }, this),
+                            "状況やタイミングを見極めたコミュニケーション力、問題や物事の本質を捉え具体的な課題に分解し改善案や解決策を模索する力、それらは保育の現場と日々の制作の中で培ってきた、私の大きな強みです。"
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/app/components/top/Top.tsx",
+                        lineNumber: 70,
+                        columnNumber: 11
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/app/components/top/Top.tsx",
+                lineNumber: 65,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
                 className: portfolio,
                 id: "works",
                 children: [
@@ -346,7 +405,7 @@ const Top = ({ works })=>{
                         allCount: allCount
                     }, void 0, false, {
                         fileName: "[project]/app/components/top/Top.tsx",
-                        lineNumber: 66,
+                        lineNumber: 82,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -360,14 +419,14 @@ const Top = ({ works })=>{
                                 key: work.id,
                                 __source: {
                                     fileName: "[project]/app/components/top/Top.tsx",
-                                    lineNumber: 74,
+                                    lineNumber: 90,
                                     columnNumber: 13
                                 },
                                 __self: this
                             }))
                     }, void 0, false, {
                         fileName: "[project]/app/components/top/Top.tsx",
-                        lineNumber: 72,
+                        lineNumber: 88,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
@@ -380,18 +439,18 @@ const Top = ({ works })=>{
                             alt: title
                         }, void 0, false, {
                             fileName: "[project]/app/components/top/Top.tsx",
-                            lineNumber: 91,
+                            lineNumber: 107,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/app/components/top/Top.tsx",
-                        lineNumber: 85,
+                        lineNumber: 101,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/components/top/Top.tsx",
-                lineNumber: 65,
+                lineNumber: 81,
                 columnNumber: 7
             }, this)
         ]

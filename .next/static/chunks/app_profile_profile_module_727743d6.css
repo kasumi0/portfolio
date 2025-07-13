@@ -12,13 +12,13 @@
   font-size: max(6vw, 2.6em);
 }
 
-.profile-module__3PkVZa__top {
+.profile-module__3PkVZa__policy {
   padding-bottom: max(10vw, 120px);
   display: flex;
   position: relative;
 }
 
-.profile-module__3PkVZa__top h2 {
+.profile-module__3PkVZa__policy h2 {
   mix-blend-mode: color-burn;
   z-index: -1;
   font-size: max(15vw, 5.4em);
@@ -28,7 +28,7 @@
   inset: auto 0 0 auto;
 }
 
-.profile-module__3PkVZa__top h3 {
+.profile-module__3PkVZa__policy h3 {
   font-family: var(--font-gothic), sans-serif;
   width: 50%;
   color: var(--primary-c);
@@ -39,36 +39,36 @@
   display: flex;
 }
 
-.profile-module__3PkVZa__top h3:before {
+.profile-module__3PkVZa__policy h3:before {
   content: "";
   background-color: currentColor;
   width: max(70%, 300px);
   height: 1px;
 }
 
-.profile-module__3PkVZa__top p {
+.profile-module__3PkVZa__policy p {
   font-family: var(--font-gothic), sans-serif;
   flex: 1;
   line-height: 2;
 }
 
-.profile-module__3PkVZa__historyArea {
+.profile-module__3PkVZa__history {
   background-color: var(--font-c);
   color: #ccc;
 }
 
-.profile-module__3PkVZa__historyArea > div {
+.profile-module__3PkVZa__history > div {
   gap: 5%;
   width: min(100%, 1000px);
   margin-inline: auto;
   display: flex;
 }
 
-.profile-module__3PkVZa__historyArea .profile-module__3PkVZa__head {
+.profile-module__3PkVZa__history .profile-module__3PkVZa__head {
   width: 30%;
 }
 
-.profile-module__3PkVZa__historyArea .profile-module__3PkVZa__head > img {
+.profile-module__3PkVZa__history .profile-module__3PkVZa__head > img {
   aspect-ratio: 1;
   object-fit: cover;
   border-radius: 50%;
@@ -76,24 +76,24 @@
   height: auto;
 }
 
-.profile-module__3PkVZa__historyArea h2 {
+.profile-module__3PkVZa__history h2 {
   mix-blend-mode: overlay;
   margin-bottom: 1.6rem;
   font-size: max(4vw, 3em);
   line-height: 1.2;
 }
 
-.profile-module__3PkVZa__historyArea .profile-module__3PkVZa__body {
+.profile-module__3PkVZa__history .profile-module__3PkVZa__body {
   flex: 1;
   line-height: 1.8;
 }
 
-.profile-module__3PkVZa__historyArea .profile-module__3PkVZa__body p {
+.profile-module__3PkVZa__history .profile-module__3PkVZa__body p {
   font-family: var(--font-gothic), sans-serif;
   font-size: 14.4px;
 }
 
-.profile-module__3PkVZa__historyArea .profile-module__3PkVZa__body h3 {
+.profile-module__3PkVZa__history .profile-module__3PkVZa__body h3 {
   mix-blend-mode: overlay;
   font-size: 1.2em;
   font-weight: 500;

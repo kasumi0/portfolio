@@ -5,15 +5,10 @@
         "app/page": {
           "moduleId": "[project]/.next-internal/server/app/page/actions.js { ACTIONS_MODULE0 => \"[project]/libs/api.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
           "async": false
-        },
-        "app/works/[contentId]/page": {
-          "moduleId": "[project]/.next-internal/server/app/works/[contentId]/page/actions.js { ACTIONS_MODULE0 => \"[project]/libs/api.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
-          "async": false
         }
       },
       "layer": {
-        "app/page": "rsc",
-        "app/works/[contentId]/page": "rsc"
+        "app/page": "rsc"
       }
     },
     "7fc2d416feb991cf88380d57b79b76f39909491370": {
@@ -21,15 +16,10 @@
         "app/page": {
           "moduleId": "[project]/.next-internal/server/app/page/actions.js { ACTIONS_MODULE0 => \"[project]/libs/api.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
           "async": false
-        },
-        "app/works/[contentId]/page": {
-          "moduleId": "[project]/.next-internal/server/app/works/[contentId]/page/actions.js { ACTIONS_MODULE0 => \"[project]/libs/api.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
-          "async": false
         }
       },
       "layer": {
-        "app/page": "rsc",
-        "app/works/[contentId]/page": "rsc"
+        "app/page": "rsc"
       }
     }
   },

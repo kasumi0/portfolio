@@ -1,6 +1,9 @@
+'use client'
+
 import { motion } from "framer-motion";
 import styles from "../top.module.css";
-const { infiniteArea } = styles;
+import { useEffect, useState } from "react";
+const { infiniteArea, safari } = styles;
 
 type Props = {
   text: string;
@@ -8,9 +11,16 @@ type Props = {
 };
 export const InfiniteText = ({ text, count }: Props) => {
   const loopedText = `${text} \u00A0 \u00A0`.repeat(count);
-
+  const [isSafari, setIsSafari] = useState(false);
+  useEffect(() => {
+    if (typeof navigator !== "undefined") {
+      const ua = navigator.userAgent.toLowerCase();
+      const safari = /^((?!chrome|android).)*safari/.test(ua);
+      setIsSafari(safari);
+    }
+  }, []);
   return (
-    <div className={infiniteArea}>
+    <div className={`${infiniteArea} ${isSafari ? safari : ""}`}>
       <motion.div
         initial={{ x: 0 }}
         animate={{ x: "-100%" }}
@@ -22,9 +32,10 @@ export const InfiniteText = ({ text, count }: Props) => {
       >
         <span>{loopedText}</span>
       </motion.div>
+
       <motion.div
-        initial={{ x: '100%' }}
-        animate={{ x: '0%' }}
+        initial={{ x: "100%" }}
+        animate={{ x: "0%" }}
         transition={{
           duration: 50,
           ease: "linear",

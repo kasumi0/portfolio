@@ -15,7 +15,6 @@
 
 .top-module__c6siba__hero > span {
   font-family: var(--font-shippori);
-  text-transform: capitalize;
   text-align: end;
   -webkit-text-stroke: var(--smoky-c) 1px;
   opacity: .6;
@@ -46,6 +45,38 @@
 .top-module__c6siba__infiniteArea > div span {
   font-size: max(4vw, 2em);
   font-weight: 600;
+}
+
+.top-module__c6siba__infiniteArea.top-module__c6siba__safari {
+  color: var(--primary-c);
+  opacity: .3;
+}
+
+.top-module__c6siba__about {
+  gap: 5vw;
+  padding-bottom: 0;
+  line-height: 2;
+  display: flex;
+}
+
+.top-module__c6siba__about hgroup {
+  width: max(40%, 320px);
+}
+
+.top-module__c6siba__about h2 {
+  color: var(--smoky-c);
+  font-size: max(1.6vw, 18px);
+  font-weight: 600;
+  line-height: 1;
+}
+
+.top-module__c6siba__about h3 {
+  font-size: max(1.6vw, 18px);
+}
+
+.top-module__c6siba__about > p {
+  font-family: var(--font-gothic);
+  flex: 1;
 }
 
 .top-module__c6siba__portfolio {
@@ -240,6 +271,14 @@
 
   .top-module__c6siba__hero > span {
     right: 0;
+  }
+
+  .top-module__c6siba__about {
+    flex-direction: column;
+  }
+
+  .top-module__c6siba__about hgroup {
+    width: 100%;
   }
 
   .top-module__c6siba__portfolio {
