@@ -11,7 +11,7 @@ type Props = {
 export const Top = ({ works }: Props) => (
   <>
     <section className={hero}>
-      <h1>kasumi takabayashi</h1>
+      <h1>kasumi <br/>takabayashi</h1>
       <span>
         Creative
         <br />

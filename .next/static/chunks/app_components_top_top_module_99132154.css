@@ -10,7 +10,11 @@
 .top-module__c6siba__hero h1 {
   text-align: center;
   text-transform: capitalize;
-  font-size: max(8vw, 3em);
+  font-size: max(8vw, 3.2em);
+}
+
+.top-module__c6siba__hero h1 br {
+  display: none;
 }
 
 .top-module__c6siba__hero > span {
@@ -267,6 +271,10 @@
 
   .top-module__c6siba__hero h1 {
     line-height: 1.2;
+  }
+
+  .top-module__c6siba__hero h1 br {
+    display: block;
   }
 
   .top-module__c6siba__hero > span {
