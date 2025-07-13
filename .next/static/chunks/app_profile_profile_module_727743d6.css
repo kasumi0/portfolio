@@ -131,39 +131,39 @@
 }
 
 @media (width < 768px) {
-  .profile-module__3PkVZa__top {
+  .profile-module__3PkVZa__policy {
     flex-direction: column;
     gap: 50px;
   }
 
-  .profile-module__3PkVZa__top h3 {
+  .profile-module__3PkVZa__policy h3 {
     font-family: var(--font-gothic), sans-serif;
     width: fit-content;
     margin-left: auto;
   }
 
-  .profile-module__3PkVZa__top h3:before {
+  .profile-module__3PkVZa__policy h3:before {
     width: 100%;
   }
 
-  .profile-module__3PkVZa__historyArea > div {
+  .profile-module__3PkVZa__history > div {
     flex-direction: column;
     gap: 1em;
   }
 
-  .profile-module__3PkVZa__historyArea .profile-module__3PkVZa__head {
+  .profile-module__3PkVZa__history .profile-module__3PkVZa__head {
     align-items: center;
     gap: 1em;
     width: 100%;
     display: flex;
   }
 
-  .profile-module__3PkVZa__historyArea .profile-module__3PkVZa__head > img {
+  .profile-module__3PkVZa__history .profile-module__3PkVZa__head > img {
     order: -1;
     width: 100px;
   }
 
-  .profile-module__3PkVZa__historyArea h2 {
+  .profile-module__3PkVZa__history h2 {
     margin: 0;
   }
 

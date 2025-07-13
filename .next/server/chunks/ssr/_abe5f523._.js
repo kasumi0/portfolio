@@ -26,10 +26,8 @@ __turbopack_context__.v({
   "fv": "profile-module__3PkVZa__fv",
   "head": "profile-module__3PkVZa__head",
   "history": "profile-module__3PkVZa__history",
-  "historyArea": "profile-module__3PkVZa__historyArea",
   "policy": "profile-module__3PkVZa__policy",
   "skillsArea": "profile-module__3PkVZa__skillsArea",
-  "top": "profile-module__3PkVZa__top",
 });
 }}),
 "[project]/app/profile/page.tsx [app-rsc] (ecmascript)": ((__turbopack_context__) => {
