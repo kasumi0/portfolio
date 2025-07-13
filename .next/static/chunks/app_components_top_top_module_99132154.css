@@ -10,7 +10,7 @@
 .top-module__c6siba__hero h1 {
   text-align: center;
   text-transform: capitalize;
-  font-size: max(8vw, 1.5em);
+  font-size: max(8vw, 3em);
 }
 
 .top-module__c6siba__hero > span {
@@ -20,7 +20,7 @@
   -webkit-text-stroke: var(--smoky-c) 1px;
   opacity: .6;
   color: #0000;
-  font-size: 6vw;
+  font-size: max(6vw, 3em);
   font-weight: 600;
   line-height: .9;
   position: absolute;
@@ -30,7 +30,7 @@
 .top-module__c6siba__infiniteArea {
   mix-blend-mode: color-burn;
   width: 100vw;
-  height: 6vw;
+  height: max(6vw, 3em);
   margin-inline: -5vw;
   position: relative;
   overflow: hidden;
@@ -44,7 +44,7 @@
 }
 
 .top-module__c6siba__infiniteArea > div span {
-  font-size: 4vw;
+  font-size: max(4vw, 2em);
   font-weight: 600;
 }
 
@@ -102,8 +102,10 @@
   translate: -20px;
 }
 
-.top-module__c6siba__categoriesNav button:not(.top-module__c6siba__current):hover {
-  color: #333;
+@media (any-hover: hover) {
+  .top-module__c6siba__categoriesNav button:not(.top-module__c6siba__current):hover {
+    color: #333;
+  }
 }
 
 .top-module__c6siba__thumbArea {
@@ -174,6 +176,10 @@
   line-height: 1.6;
 }
 
+.top-module__c6siba__sp {
+  display: none;
+}
+
 .top-module__c6siba__linkCover {
   position: absolute;
   inset: 0;
@@ -201,6 +207,62 @@
 .top-module__c6siba__categoriesArea button:hover {
   color: #fff;
   background-color: #666;
+}
+
+@media (orientation: portrait) {
+  .top-module__c6siba__hero {
+    height: 80vh;
+  }
+}
+
+@media (width < 1024px) {
+  .top-module__c6siba__thumbArea {
+    display: none;
+  }
+
+  .top-module__c6siba__sp {
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    display: block;
+  }
+}
+
+@media (width < 768px) {
+  .top-module__c6siba__hero {
+    gap: 1em;
+  }
+
+  .top-module__c6siba__hero h1 {
+    line-height: 1.2;
+  }
+
+  .top-module__c6siba__hero > span {
+    right: 0;
+  }
+
+  .top-module__c6siba__portfolio {
+    --nav-w: 100%;
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .top-module__c6siba__categoriesNav {
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 10px 4em;
+    display: grid;
+    position: static;
+  }
+
+  .top-module__c6siba__categoriesNav button:before {
+    opacity: 0;
+    transition: opacity .4s;
+  }
+
+  .top-module__c6siba__categoriesNav button.top-module__c6siba__current:before {
+    opacity: 1;
+  }
 }
 
 

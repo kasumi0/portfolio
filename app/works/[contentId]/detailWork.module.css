@@ -1,3 +1,7 @@
+.area {
+  padding-top: calc(var(--header-h) + max(5vw, 50px));
+}
+
 .articleArea {
   width: min(100%, 900px);
   margin-inline: auto;
@@ -83,7 +87,7 @@
   display: block;
   width: fit-content;
   margin: max(5vw, 50px) 0 0 auto;
-  font-size: 5vw;
+  font-size: max(5vw, 2.5em);
   text-transform: capitalize;
   position: relative;
   line-height: 1;
@@ -105,4 +109,13 @@
       transform-origin: left;
     }
   }
+}
+
+@media (width < 768px) {
+  .urlP {
+    & a {
+      font-size: 13px;
+    }
+  }
+  
 }

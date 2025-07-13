@@ -2,10 +2,10 @@
   display: grid;
   place-items: center;
   margin-top: var(--header-h);
-  height: 50vh;
+  height: max(50vmin, 260px);
   & h1 {
     text-transform: uppercase;
-    font-size: 6vw;
+    font-size: max(6vw, 2.6em);
     letter-spacing: 0.1em;
   }
 }
@@ -13,12 +13,12 @@
 .top {
   display: flex;
   position: relative;
-  padding-bottom: max(10vw, 100px);
+  padding-bottom: max(10vw, 120px);
 
   & h2 {
     position: absolute;
     inset: auto 0 0 auto;
-    font-size: 15vw;
+    font-size: max(15vw, 5.4em);
     line-height: 1.2;
     mix-blend-mode: color-burn;
     font-weight: 600;
@@ -90,7 +90,7 @@
 
 .skillsArea {
   & h2 {
-    font-size: 5vw;
+    font-size: max(5vw, 50px);
     margin-bottom: 5vw;
     font-weight: 600;
     text-align: center;
@@ -115,5 +115,50 @@
       max-height: 80px;
       width: auto;
     }
+  }
+}
+
+@media (width < 768px) {
+  .top {
+    flex-direction: column;
+    gap: 50px;
+    & h3 {
+      font-family: var(--font-gothic), sans-serif;
+      width: fit-content;
+      margin-left: auto;
+      &::before {
+        width: 100%;
+      }
+  
+    }  
+  }
+  .historyArea {
+    & > div {
+
+    flex-direction: column;
+    gap: 1em;
+    }
+    & .head {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      gap: 1em;
+      > img {
+        width: 100px;
+        order: -1;
+      }
+    }
+    & h2 {
+      margin: 0;
+    }
+  }
+  .skillsArea {
+    & ul {
+      grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    }
+    & figure img {
+      max-height: 60px;
+    }
+  
   }
 }

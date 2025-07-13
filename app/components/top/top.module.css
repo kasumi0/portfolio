@@ -6,20 +6,20 @@
   position: relative;
   & h1 {
     text-align: center;
-    font-size: max(8vw, 1.5em);
+    font-size: max(8vw, 3em);
     text-transform: capitalize;
   }
   & > span {
     font-family: var(--font-shippori);
     position: absolute;
-    inset: auto 5vw -.02em auto;
-    font-size: 6vw;
+    inset: auto 5vw -0.02em auto;
+    font-size: max(6vw, 3em);
     text-transform: capitalize;
     font-weight: 600;
     text-align: end;
-    line-height: .9;
+    line-height: 0.9;
     -webkit-text-stroke: var(--smoky-c) 1px;
-    opacity: .6;
+    opacity: 0.6;
     color: transparent;
   }
 }
@@ -27,16 +27,16 @@
   overflow: hidden;
   width: 100vw;
   margin-inline: -5vw;
-  mix-blend-mode:color-burn;
+  mix-blend-mode: color-burn;
   position: relative;
-  height: 6vw;
+  height: max(6vw, 3em);
   & > div {
     position: absolute;
     inset: 0 auto auto 0;
     white-space: nowrap;
     display: inline-block;
     & span {
-      font-size: 4vw;
+      font-size: max(4vw, 2em);
       font-weight: 600;
     }
   }
@@ -48,6 +48,7 @@
   align-items: start;
   gap: 5vw;
 }
+
 .categoriesNav {
   position: sticky;
   top: calc(var(--h) - 10em);
@@ -86,8 +87,10 @@
         translate: -20px;
       }
     }
-    &:not(.current):hover {
-      color: #333;
+    @media (any-hover: hover) {
+      &:not(.current):hover {
+        color: #333;
+      }
     }
   }
 }
@@ -152,6 +155,9 @@
     margin-bottom: 10px;
   }
 }
+.sp {
+  display: none;
+}
 .linkCover {
   position: absolute;
   inset: 0;
@@ -177,5 +183,54 @@
     }
   }
 }
+
+@media (orientation: portrait) {
+  .hero {
+    height: 80vh;
+  }
+}
+
+@media (width < 1024px) {
+  .thumbArea {
+    display: none;
+  }
+  .sp {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+}
+
 @media (width < 768px) {
+  .hero {
+    gap: 1em;
+    & h1 {
+      line-height: 1.2;
+    }
+    & > span {
+      right: 0;
+    }
+  }
+  .portfolio {
+    flex-direction: column;
+    gap: 50px;
+    --nav-w: 100%;
+  }
+  .categoriesNav {
+    position: static;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 10px 4em;
+    & button {
+      &::before {
+        opacity: 0;
+        transition: opacity 0.4s;
+      }
+      &.current::before {
+        opacity: 1;
+      }
+    }
+  }
 }

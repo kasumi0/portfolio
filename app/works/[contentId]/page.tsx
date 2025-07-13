@@ -4,7 +4,8 @@ import styles from "./detailWork.module.css";
 import Image from "next/image";
 import { WorkArticle } from "@/types/types";
 import Link from "next/link";
-const { articleArea, isRun, privateArticle, bodyArea, urlP, backLink } = styles;
+const { area, articleArea, isRun, privateArticle, bodyArea, urlP, backLink } =
+  styles;
 
 type Props = {
   params: Promise<{ contentId: string }>;
@@ -18,7 +19,7 @@ export default async function DetailWork({ params }: Props) {
   const reactElement = parse(body);
 
   return (
-    <section>
+    <section className={area}>
       <article className={articleArea}>
         <h1>
           <a href={url} target="_blank">

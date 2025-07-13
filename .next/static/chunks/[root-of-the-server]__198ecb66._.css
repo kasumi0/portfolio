@@ -4545,6 +4545,7 @@ html {
 
 @media (width < 768px) {
   :root {
+    --header-h: 60px;
     font-size: .9em;
   }
 }
@@ -4565,6 +4566,16 @@ body {
   height: 100vh;
   position: fixed;
   inset: 0;
+}
+
+@media (orientation: portrait) {
+  .bg-movie {
+    width: 100vh;
+    height: 100vw;
+    inset: 50% auto auto 50%;
+    translate: -50% -50%;
+    rotate: 90deg;
+  }
 }
 
 section {
@@ -4853,6 +4864,25 @@ td, th {
 .header-module__bAz-Na__header li:hover a:before {
   transition-delay: .2s;
   scale: 1;
+}
+
+@media (width < 768px) {
+  .header-module__bAz-Na__header h1 a {
+    font-size: 16px;
+    line-height: 1.2;
+  }
+
+  .header-module__bAz-Na__header h1 a span {
+    font-size: 13px;
+  }
+
+  .header-module__bAz-Na__header ul a {
+    translate: 0;
+  }
+
+  .header-module__bAz-Na__header ul a:before {
+    display: none;
+  }
 }
 
 

@@ -31,7 +31,7 @@
       display: flex;
       align-items: center;
       gap: 0.6em;
-      translate: -.8em;
+      translate: -0.8em;
       transition: translate 0.4s;
       &::before {
         content: "";
@@ -51,6 +51,27 @@
       &::before {
         scale: 1;
         transition-delay: 0.2s;
+      }
+    }
+  }
+}
+
+@media (width < 768px) {
+  .header {
+    & h1 a {
+      font-size: 16px;
+      line-height: 1.2;
+      & span {
+        font-size: 13px;
+      }
+    }
+    & ul {
+      & a {
+        translate: 0;
+
+        &::before {
+          display: none;
+        }
       }
     }
   }

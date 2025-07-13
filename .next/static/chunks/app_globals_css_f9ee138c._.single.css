@@ -21,6 +21,7 @@ html {
 
 @media (width < 768px) {
   :root {
+    --header-h: 60px;
     font-size: .9em;
   }
 }
@@ -41,6 +42,16 @@ body {
   height: 100vh;
   position: fixed;
   inset: 0;
+}
+
+@media (orientation: portrait) {
+  .bg-movie {
+    width: 100vh;
+    height: 100vw;
+    inset: 50% auto auto 50%;
+    translate: -50% -50%;
+    rotate: 90deg;
+  }
 }
 
 section {
