@@ -14,7 +14,6 @@
   display: flex;
   position: relative;
   padding-bottom: max(10vw, 120px);
-
   & h2 {
     position: absolute;
     inset: auto 0 0 auto;
@@ -98,11 +97,31 @@
     letter-spacing: 0.1em;
     mix-blend-mode: color-burn;
   }
-  & ul {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-    gap: max(3vw, 1em);
+}
+.othersArea {
+  padding-top: 0;
+  & h2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: max(5vw, 30px);
+    & span:first-child {
+      color: var(--font-c);
+      font-size: max(5vw, 44px);
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      mix-blend-mode: color-burn;
+    }
+    & span:last-child {
+      color: var(--smoky-c);
+      font-family: var(--font-gothic);
+    }
   }
+}
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: max(3vw, 1em);
   & figure {
     display: flex;
     flex-direction: column;
@@ -150,10 +169,8 @@
       margin: 0;
     }
   }
-  .skillsArea {
-    & ul {
-      grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
-    }
+  .cards {
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
     & figure img {
       max-height: 60px;
     }

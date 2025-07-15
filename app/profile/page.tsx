@@ -1,33 +1,11 @@
 import Image from "next/image";
 import styles from "./profile.module.css";
-const { fv, policy, history, head, body, skillsArea } = styles;
+import { others, skills } from "../data/skills";
+import { SkillCard } from "./skill";
+const { fv, policy, history, head, body, skillsArea, othersArea, cards } = styles;
 
 export default function Profile() {
-  const skills = [
-    { caption: "WordPress", icon: "/skills/wordpress.svg" },
-    { caption: "Figma", icon: "/skills/figma.svg" },
-    { caption: "Adobe Photoshop", icon: "/skills/photoshop.svg" },
-    { caption: "Adobe Illustrator", icon: "/skills/illustrator.svg" },
-    { caption: "Adobe PremierPro", icon: "/skills/premier.svg" },
-    { caption: "TypeScript(js)", icon: "/skills/ts.svg" },
-    { caption: "React", icon: "/skills/react.svg" },
-    { caption: "Next.js", icon: "/skills/next.png" },
-    { caption: "GitHub", icon: "/skills/github.svg" },
-    { caption: "GraphQL", icon: "/skills/graphQL.svg" },
-    { caption: "Vercel", icon: "/skills/vercel.svg" },
-    { caption: "Vercel Postgres(Neon)", icon: "/skills/neon.svg" },
-    { caption: "Auth.js", icon: "/skills/auth.webp" },
-    { caption: "Supabase", icon: "/skills/supabase.svg" },
-    { caption: "MicroCMS", icon: "/skills/microCMS.svg" },
-    { caption: "Stripe", icon: "/skills/stripe.webp" },
-    { caption: "Prisma", icon: "/skills/prisma.svg" },
-    { caption: "Zod", icon: "/skills/zod.svg" },
-    { caption: "Vanilla-extract", icon: "/skills/vanilla-extract.png" },
-    { caption: "GSAP", icon: "/skills/gsap.png" },
-    { caption: "Framer-motion", icon: "/skills/framer-motion.svg" },
-    { caption: "React-three-fiber", icon: "/skills/three.svg" },
-    { caption: "Astro", icon: "/skills/astro.svg" },
-  ];
+
   return (
     <>
       <section className={fv}>
@@ -82,19 +60,21 @@ export default function Profile() {
 
       <section className={skillsArea}>
         <h2>skills</h2>
-        <ul>
+        <ul className={cards}>
           {skills.map((skill) => (
-            <li key={skill.caption}>
-              <figure>
-                <Image
-                  src={skill.icon}
-                  alt={skill.caption}
-                  width={200}
-                  height={200}
-                />
-                <figcaption>{skill.caption}</figcaption>
-              </figure>
-            </li>
+            <SkillCard skill={skill} key={skill.caption} />
+          ))}
+        </ul>
+      </section>
+
+      <section className={othersArea}>
+        <h2>
+          <span>Next to Learn</span>
+          <span>これからキャッチアップしたい注目の技術</span>
+        </h2>
+        <ul className={cards}>
+          {others.map((skill) => (
+            <SkillCard skill={skill} key={skill.caption} />
           ))}
         </ul>
       </section>

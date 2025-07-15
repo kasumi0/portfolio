@@ -19,3 +19,8 @@ export type WorkArticle = {
   body: string;
   categories: Category[];
 };
+
+export type Skill = {
+  caption: string;
+  icon: string;
+};
