@@ -100,27 +100,13 @@
 }
 
 .profile-module__3PkVZa__skillsArea h2 {
-  text-align: center;
-  text-transform: capitalize;
-  letter-spacing: .1em;
-  mix-blend-mode: color-burn;
-  margin-bottom: 5vw;
-  font-size: max(5vw, 50px);
-  font-weight: 600;
-}
-
-.profile-module__3PkVZa__othersArea {
-  padding-top: 0;
-}
-
-.profile-module__3PkVZa__othersArea h2 {
   flex-direction: column;
   align-items: center;
   margin-bottom: max(5vw, 30px);
   display: flex;
 }
 
-.profile-module__3PkVZa__othersArea h2 span:first-child {
+.profile-module__3PkVZa__skillsArea h2 span:first-child {
   color: var(--font-c);
   letter-spacing: .1em;
   mix-blend-mode: color-burn;
@@ -128,9 +114,13 @@
   font-weight: 600;
 }
 
-.profile-module__3PkVZa__othersArea h2 span:last-child {
+.profile-module__3PkVZa__skillsArea h2 span:nth-child(2) {
   color: var(--smoky-c);
   font-family: var(--font-gothic);
+}
+
+.profile-module__3PkVZa__skillsArea ~ .profile-module__3PkVZa__skillsArea {
+  padding-top: 0;
 }
 
 .profile-module__3PkVZa__cards {

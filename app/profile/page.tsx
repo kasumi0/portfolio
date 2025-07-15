@@ -1,8 +1,8 @@
 import Image from "next/image";
 import styles from "./profile.module.css";
-import { others, skills } from "../data/skills";
+import { skills, deepenSkills, nextSkills } from "../data/skills";
 import { SkillCard } from "./skill";
-const { fv, policy, history, head, body, skillsArea, othersArea, cards } = styles;
+const { fv, policy, history, head, body, skillsArea, cards } = styles;
 
 export default function Profile() {
 
@@ -59,7 +59,9 @@ export default function Profile() {
       </section>
 
       <section className={skillsArea}>
-        <h2>skills</h2>
+        <h2>
+          <span>Skills</span>
+        </h2>
         <ul className={cards}>
           {skills.map((skill) => (
             <SkillCard skill={skill} key={skill.caption} />
@@ -67,13 +69,25 @@ export default function Profile() {
         </ul>
       </section>
 
-      <section className={othersArea}>
+      <section className={skillsArea}>
+        <h2>
+          <span>Deepen Next</span>
+          <span>さらに深めていきたい技術</span>
+        </h2>
+        <ul className={cards}>
+          {deepenSkills.map((skill) => (
+            <SkillCard skill={skill} key={skill.caption} />
+          ))}
+        </ul>
+      </section>
+
+      <section className={skillsArea}>
         <h2>
           <span>Next to Learn</span>
           <span>これからキャッチアップしたい注目の技術</span>
         </h2>
         <ul className={cards}>
-          {others.map((skill) => (
+          {nextSkills.map((skill) => (
             <SkillCard skill={skill} key={skill.caption} />
           ))}
         </ul>

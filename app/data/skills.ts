@@ -1,6 +1,5 @@
 import { Skill } from "@/types/types";
 
-
 export const skills: Skill[] = [
     { caption: "WordPress", icon: "/skills/wordpress.svg" },
     { caption: "Figma", icon: "/skills/figma.svg" },
@@ -11,23 +10,26 @@ export const skills: Skill[] = [
     { caption: "React", icon: "/skills/react.svg" },
     { caption: "Next.js", icon: "/skills/next.png" },
     { caption: "GitHub", icon: "/skills/github.svg" },
-    { caption: "GraphQL", icon: "/skills/graphQL.svg" },
     { caption: "Vercel", icon: "/skills/vercel.svg" },
     { caption: "Vercel Postgres(Neon)", icon: "/skills/neon.svg" },
     { caption: "Auth.js", icon: "/skills/auth.webp" },
-    { caption: "Supabase", icon: "/skills/supabase.svg" },
     { caption: "MicroCMS", icon: "/skills/microCMS.svg" },
-    { caption: "Stripe", icon: "/skills/stripe.webp" },
     { caption: "Prisma", icon: "/skills/prisma.svg" },
     { caption: "Zod", icon: "/skills/zod.svg" },
-    { caption: "Vanilla-extract", icon: "/skills/vanilla-extract.png" },
     { caption: "GSAP", icon: "/skills/gsap.png" },
-    { caption: "Framer-motion", icon: "/skills/framer-motion.svg" },
-    { caption: "React-three-fiber", icon: "/skills/three.svg" },
-    { caption: "Astro", icon: "/skills/astro.svg" },
+    { caption: "Vanilla-extract", icon: "/skills/vanilla-extract.png" },
   ];
+  
+  export const deepenSkills: Skill[] = [
+   { caption: "GraphQL", icon: "/skills/graphQL.svg" },
+   { caption: "Supabase", icon: "/skills/supabase.svg" },
+   { caption: "Stripe", icon: "/skills/stripe.webp" },
+   { caption: "Framer-motion", icon: "/skills/framer-motion.svg" },
+   { caption: "React-three-fiber", icon: "/skills/three.svg" },
+   { caption: "Astro", icon: "/skills/astro.svg" },
+ ];
 
- export const others: Skill[] = [
+ export const nextSkills: Skill[] = [
    { caption: "Drizzle ORM", icon: "/skills/drizzle.svg" },
    { caption: "Vite", icon: "/skills/vite.svg" },
    { caption: "Bun", icon: "/skills/bun.avif" },
